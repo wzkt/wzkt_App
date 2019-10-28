@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#03a9f4</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#020202</color>
+    <color name="orange_255_102_64">#FF6640</color>
+    <color name="gray_203_203_203">#CBCBCB</color>
+    <color name="pink_255_179_161">#FFB3A1</color>
+    <color name="gray_207_207_207">#E3E3E3</color>
+    <color name="orange_255_49_0">#FF3100</color>
+    <color name="orange_255_181_163">#FFB5A3</color>
+    <color name="orange_255_133_104">#FF8568</color>
+    <color name="black_89_89_89">#59595A</color>
+    <color name="gray_157_157_157">#9D9D9D</color>
+    <color name="gray_123_123_123">#7B7B7B</color>
+    <color name="blue_81_146_226">#5192E2</color>
+    <color name="blue_0_160_226">#00a0e2</color>
+    <color name="blue_171_210_240">#abd2f0</color>
+    <color name="red_213_0_0">#D50000</color>
+    <color name="gray_189_189_189">#BDBDBD</color>
+    <color name="textcolor">#9D9D9D</color>
+    <!-- 铃声名字的颜色 -->
+    <color name="bellcolor">#7B7B7B</color>
+    <color name="firstF">#00a0e2</color>
+     <color name="kaiguan">#abd2f0</color>
+    <color name="point_color">#FFFDFE</color>
+    <color name="wheel_unactive_color">#BDBDBD</color>
+    <color name="balck">#020202</color>
+    <color name="slidecolor">#4971A4</color>
+    <color name="gray">#CBCBCB</color>
+
+</resources>

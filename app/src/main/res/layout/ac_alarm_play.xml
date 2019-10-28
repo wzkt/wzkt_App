@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_0_160_226"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_200"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/drugalarm" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/alarmdel_tv_showlable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="妈妈，我该吃药啦!"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/alarmDel_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cancel_temp_clock"
+        android:onClick="clickButton"
+        android:padding="10dp"
+        android:text="取消提醒"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

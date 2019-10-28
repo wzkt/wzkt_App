@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center|right"
+        android:layout_marginTop="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_30"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/size_100"
+            android:layout_height="@dimen/size_100"
+            android:layout_gravity="center"
+            android:background="@mipmap/wzktlogo2"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_200"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/size_120"
+            android:layout_height="@dimen/size_120"
+            android:background="@mipmap/ic_eve_icon"
+            android:scaleType="centerCrop" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_30"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

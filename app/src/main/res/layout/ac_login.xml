@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号："
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_15" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="@dimen/size_10"
+            android:textColor="@color/black_89_89_89"
+            android:textColorHint="@color/gray_203_203_203"
+            android:textSize="@dimen/font_14">
+
+            <requestFocus />
+        </android.support.v7.widget.AppCompatEditText>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码："
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_15" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="请输入数字密码"
+            android:inputType="textPassword|number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="@dimen/size_10"
+            android:textColor="@color/black_89_89_89"
+            android:textColorHint="@color/gray_203_203_203"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_login_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_line_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingStart="@dimen/size_10"
+            android:paddingTop="@dimen/size_5"
+            android:text="@string/str_forget_pwd"
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/iv_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_red_line_bg"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingStart="@dimen/size_10"
+            android:paddingTop="@dimen/size_5"
+            android:text="@string/TV_register"
+            android:textColor="@color/orange_255_49_0"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_40"
+        android:background="@drawable/slt_login_bg"
+        android:onClick="btnLogin"
+        android:text="@string/BT_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+</LinearLayout>

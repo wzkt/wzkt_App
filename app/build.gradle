@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.wzkt.eva"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //buildConfigField "String", "SERVER_URL", "\"http://192.168.14.106/api/index.php/Home/\""
+            buildConfigField "String", "SERVER_URL", "\"http://139.199.128.56:9000/index.php/home/\""
+            buildConfigField "Boolean", "DEBUG_MODE", "false"
+            buildConfigField "String", "SERVER_URL_NEW", "\"http://39.105.40.32:8800/\""
+        }
+        debug {
+//            buildConfigField "String", "SERVER_URL", "\"http://192.168.14.105/api/index.php/Home/\""
+//            buildConfigField "String", "SERVER_URL", "\"http://101.201.30.238/index.php/home/\""
+            buildConfigField "String", "SERVER_URL", "\"http://139.199.128.56:8033/\""
+            buildConfigField "Boolean", "DEBUG_MODE", "true"
+            buildConfigField "String", "SERVER_URL_NEW", "\"http://39.105.40.32:8800/\""
+        }
+    }
+    //设置JDK1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile project(':xutils')
+    compile 'com.android.support:support-v4:26+'
+    compile 'com.android.support:appcompat-v7:26+'
+    compile 'com.android.support:design:26+'
+    compile files('libs/gson-2.2.1.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(path: ':photo')
+    compile project(path: ':chart')
+    compile project(':FastBleLib')
+    compile project(':wifi')
+    implementation 'com.azhon:appupdate:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okio:okio:1.16.0'
+}

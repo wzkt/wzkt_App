@@ -1,0 +1,1 @@
+include ':app', ':xutils', ':photo', ':chart', ':FastBleLib', ':wifi'

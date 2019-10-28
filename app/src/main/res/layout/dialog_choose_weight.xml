@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择体重(kg)" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_dialog_weight_selector_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="确定"
+            android:textColor="@color/theme_color" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_horizontal_gray_line" />
+
+    <com.Alan.eva.ui.widget.WheelView
+        android:id="@+id/wheel_dialog_weight_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

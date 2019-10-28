@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手  机 号："
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="@dimen/size_8"
+            android:textColor="@color/black_89_89_89"
+            android:textColorHint="@color/gray_203_203_203"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验  证 码："
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_reg_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请输入验证码"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="@dimen/size_8"
+            android:inputType="phone"
+            android:textColor="@color/black_89_89_89"
+            android:textColorHint="@color/gray_203_203_203"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/edt_reg_get_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slt_get_verify"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingStart="@dimen/size_10"
+            android:paddingTop="@dimen/size_5"
+            android:text="获取验证码"
+            android:textColor="@color/black_89_89_89"
+            android:textSize="@dimen/font_13" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5"
+        android:paddingEnd="@dimen/size_15"
+        android:paddingStart="@dimen/size_15"
+        android:paddingTop="@dimen/size_5">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密       码："
+            android:textColor="@color/gray_123_123_123"
+            android:textSize="@dimen/font_14" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_reg_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="请输入数字密码"
+            android:inputType="textPassword|number"
+            android:padding="@dimen/size_8"
+            android:textColor="@color/black_89_89_89"
+            android:textColorHint="@color/gray_203_203_203"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/size_10"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_reg_user_agreement_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_reg_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_5"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_reg_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginEnd="@dimen/size_15"
+        android:layout_marginStart="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_40"
+        android:background="@drawable/slt_login_bg"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+</LinearLayout>

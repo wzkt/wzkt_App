@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_alarm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:paddingTop="@dimen/tool_bar_top_padding" />
+
+    <com.Alan.eva.ui.widget.FlexibleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/time_picker_set_time_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:timePickerMode="spinner"
+                tools:ignore="UnusedAttribute" />
+
+            <include layout="@layout/layout_horizontal_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_time_repeat_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_5"
+                    android:text="@string/setTime_repeat"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_set_time_repeat_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_horizontal_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_time_bell_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_5"
+                    android:text="@string/setTime_bell"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_set_time_bell_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/size_5"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_horizontal_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_set_time_is_vibration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_5"
+                    android:text="@string/setTime_vibration"
+                    android:textSize="15sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cb_set_time_is_vibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:button="@drawable/slt_set_time_alarm_switch" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_horizontal_gray_line" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edit_set_time_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/input_medicine_tips"
+                android:padding="@dimen/size_15"
+                android:textSize="@dimen/font_15" />
+
+            <include layout="@layout/layout_horizontal_gray_line" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_set_time_delete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/size_80"
+                android:background="@drawable/logout"
+                android:text="@string/delete_reservation"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </com.Alan.eva.ui.widget.FlexibleScrollView>
+</LinearLayout>

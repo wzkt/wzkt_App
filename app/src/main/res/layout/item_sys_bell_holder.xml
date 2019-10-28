@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_60"
+    android:paddingEnd="@dimen/size_10"
+    android:paddingStart="@dimen/size_10">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_sys_bell_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/size_10"
+        android:textColor="@color/black_89_89_89"
+        android:textSize="@dimen/font_18" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_sys_bell_checked"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_30"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/size_10"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/ic_flag_red_checked" />
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

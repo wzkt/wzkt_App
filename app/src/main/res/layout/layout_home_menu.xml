@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_100"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_home_menu_bg" />
+
+    <com.Alan.eva.ui.widget.FlexibleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_about_us"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="关于我们"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_user_helper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_user_helper"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="免责说明"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_medicine_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_get_reservation"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="预约提醒"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/size_10" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_seggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_seggestion"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="意见反馈"
+                android:textColor="@color/black_89_89_89"
+                android:visibility="gone"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10" android:visibility="gone"
+                android:layout_marginStart="@dimen/size_10" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_check_new_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_check_new_version"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="检查更新"
+                android:visibility="gone"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_monitor_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/temperature_48"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text=" 远程监测"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_wifi_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/setting_64px"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="设置"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_mac_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/temperature_48"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="手动连接蓝牙"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_changpwd_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/password"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="修改密码"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+
+
+            <include
+                layout="@layout/layout_horizontal_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_marginStart="@dimen/size_10" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_home_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/size_20"
+                android:drawableStart="@mipmap/ic_flag_log_out"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/font_20"
+                android:paddingTop="@dimen/size_10"
+                android:text="退出登录"
+                android:textColor="@color/black_89_89_89"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+    </com.Alan.eva.ui.widget.FlexibleScrollView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_home_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_30"
+        android:padding="@dimen/size_3"
+        android:text="当前版本1.0"
+        android:textColor="@color/gray_157_157_157"
+        android:textSize="@dimen/font_10" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/size_3"
+        android:text=" ©2018 五洲康泰 All Rights Reserved"
+        android:textColor="@color/gray_157_157_157"
+        android:textSize="@dimen/font_10" />
+</LinearLayout>

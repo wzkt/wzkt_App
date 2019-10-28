@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Alan.eva">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <!-- 闹钟数据库常规权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 友盟常规权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--系统日历添加吃药预约事件-->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name=".ui.EApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:label="首页"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:label="注册"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AlarmDealActivity"
+            android:label="闹钟响起"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SetTimeActivity"
+            android:label="设置闹钟"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.activity.SelectBellActivity"
+            android:label="选择铃声"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ForgetPassActivity"
+            android:label="找回密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChangePassActivity"
+            android:label="修改密码"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SuggestActivity"
+            android:label="建议反馈"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.AlarmListActivity"
+            android:label="闹钟列表"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DeviceActivity"
+            android:label="设备详情"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChildListActivity"
+            android:label="@string/child_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddChildActivity"
+            android:label="@string/child_add"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MonitorActivity"
+            android:label="监护界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChildDetailActivity"
+            android:label="@string/child_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BigPicActivity"
+            android:label="大图"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HealthDetailActivity"
+            android:label="健康界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CommonWebActivity"
+            android:label="网页"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.MonHisListActivity"
+            android:label="历史体温"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:label="引导页"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AlarmActivity"
+            android:label="提醒闹钟" >
+        </activity>
+        <activity
+            android:name=".ui.activity.MyCalendar"
+            android:label="@string/title_activity_my_calendar" >
+        </activity>
+        <activity
+            android:name=".ui.activity.DataActivity"
+            android:label="@string/title_activity_data"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ui.activity.FifthFragment">
+        </activity>
+        <activity
+            android:name=".ui.activity.TempBellActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.TempPlayingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.activity.KickPlayingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".ui.activity.KickedActivity"-->
+            <!--android:label="@string/title_activity_kicked"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".ui.activity.DrugActivity"-->
+            <!--android:label="@string/title_activity_drug"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".ui.activity.TemperatureActivity"-->
+            <!--android:label="@string/title_activity_temperature"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".ui.activity.QuiltActivity"-->
+            <!--android:label="@string/title_activity_quilt"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+
+        <!--新版蓝牙服务-->
+        <service
+            android:name=".service.BleService"
+            android:description="@string/ble_service"
+            android:stopWithTask="true">
+        </service>
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true" >
+        </service>
+        <receiver android:name=".tools.alarm.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ALARM_RECEIVER" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".tools.alarm.AlarmProvider"
+            android:authorities="com.Alan.eva.tools.alarm.AlarmProvider"
+            android:exported="false" />
+
+        <service android:name=".tools.alarm.AlarmService" />
+
+        <!--友盟集成-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="592647b17f2c744c5600047c" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="eve" />
+
+
+        <activity
+            android:name="com.Alan.eva.onepx.OnepxActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:process=":main"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <service
+            android:name="com.Alan.eva.foreground.ChannelService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":main">
+        </service>
+
+        <service
+            android:name="com.Alan.eva.foreground.DaemonService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":main">
+        </service>
+
+        <service
+            android:name="com.Alan.eva.timer.ScheduleService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+
+        <receiver
+            android:name="com.Alan.eva.broadcast.MonitorReceiver"
+            android:process=":main">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.silence.gray.wake"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.Alan.eva.onepx.ScreenReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":main">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        tools:ignore="ManifestOrder" />
+
+</manifest>

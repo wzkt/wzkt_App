@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_health_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:paddingTop="@dimen/tool_bar_top_padding" />
+
+    <com.Alan.eva.ui.widget.FlexibleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_20"
+            android:paddingTop="@dimen/size_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_health_detail_pre_month"
+                    android:layout_width="@dimen/size_40"
+                    android:layout_height="@dimen/size_35"
+                    android:background="@drawable/slt_calendar_btn_bg"
+                    android:src="@mipmap/ic_arrow_red_left" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_health_detail_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_8"
+                    android:text="2016年12月"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/ib_health_detail_next_month"
+                    android:layout_width="@dimen/size_40"
+                    android:layout_height="@dimen/size_35"
+                    android:background="@drawable/slt_calendar_btn_bg"
+                    android:src="@mipmap/ic_arrow_red_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_health_detail_total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blue_81_146_226"
+                    android:textSize="@dimen/font_100" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:textSize="@dimen/font_10" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_health_data_epilogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingEnd="@dimen/size_10"
+                android:paddingStart="@dimen/size_10"
+                android:textColor="@color/black" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_health_data_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/size_5"
+                android:padding="@dimen/size_10" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart_health_temp_trend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_300"
+                android:padding="@dimen/size_5" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_health_detail_fever_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/size_5"
+                android:padding="@dimen/size_10" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart_health_fever_counts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_300"
+                android:padding="@dimen/size_5" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_health_detail_rate_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/size_5"
+                android:padding="@dimen/size_10" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart_health_temp_distribute"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_300" />
+        </LinearLayout>
+    </com.Alan.eva.ui.widget.FlexibleScrollView>
+</LinearLayout>

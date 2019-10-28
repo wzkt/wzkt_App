@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrImageNames">
+        <item>splash_one</item>
+        <item>splash_two</item>
+        <item>splash_three</item>
+    </string-array>
+    <string-array name="repeat_item">
+        <item>只响一次</item>
+        <item>周一到周五</item>
+        <item>每天</item>
+    </string-array>
+
+</resources>

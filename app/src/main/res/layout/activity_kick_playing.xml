@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/firstF"
+     >
+    
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:src="@drawable/kickalarm"/>
+ <TextView 
+     android:layout_marginTop="20dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="15sp"
+         android:textColor="@color/white"
+         android:text="@string/kick"/>
+<Button
+    android:layout_marginTop="20dp"
+    android:id="@+id/kickPlay_btn_cancel"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="clickButton"
+    android:background="@drawable/cancel_temp_clock"
+    android:text="取消提醒"
+    android:textColor="@color/white"
+    android:textSize="15sp"/>
+</LinearLayout>

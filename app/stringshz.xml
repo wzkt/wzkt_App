@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能体温计</string>
+    <string name="BT_login">登录</string>
+    <string name="TV_register">注册</string>
+    <string name="str_forget_pwd">忘记密码</string>
+    <string name="setTime_repeat">重复</string>
+    <string name="setTime_bell">铃声</string>
+    <string name="setTime_vibration">震动</string>
+    <string name="repeat_text">重复</string>
+    <string name="del_clock">删除预约</string>
+    <string name="unBind">解除绑定</string>
+    <string name="suggest_tips"> 我们非常需要您的意见和建议，使五洲康泰更好的为您服务，请把您的意见和建议填在下方的表格里。</string>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="user_str">用户</string>
+    <string name="device_str">体温计</string>
+    <string name="add_new_child">添加孩子</string>
+    <string name="child_detail">孩子详情</string>
+    <string name="health_analyze">健康分析</string>
+    <string name="monitor">远程体温监测</string>
+    <string name="ble_service">蓝牙服务</string>
+    <string name="fever">妈妈，宝宝发烧了!</string>
+    <string name="kick">妈妈，宝宝蹬被了!</string>
+    <string name="addmonitor">添加体温监控</string>
+    <string name="hismonitor">历史体温数据</string>
+    <string name="monitormsg">体温:</string>
+    <string name="roommsg">室内温度:</string>
+    <string name="battery_powermsg">电池电量:</string>
+
+
+    <string name="device_detail">体温计详情</string>
+    <string name="my_child_list">全部姓名</string>
+    <string name="create">创建</string>
+    <string name="child_gender">性别</string>
+    <string name="child_name">姓名</string>
+    <string name="child_age">年龄</string>
+    <string name="child_height">身高</string>
+    <string name="child_weight">体重</string>
+    <string name="getting_data">正在获取</string>
+    <string name="pls_input_child_name_like">请输入姓名，例如“张三”</string>
+    <string name="score">分</string>
+    <string name="high_temp">高温</string>
+    <string name="low_temp">低温</string>
+    <string name="device_name">体温计名称</string>
+    <string name="mac_address">蓝牙地址</string>
+    <string name="battery_power">电池电量</string>
+    <string name="environment_temp">环境温度</string>
+    <string name="temp_temp">体温温度</string>
+    <string name="monitor_going_tips">正在异地监测，请稍候…</string>
+    <string name="delete_reservation">删除预约</string>
+    <string name="input_medicine_tips">输入预约内容</string>
+    <string name="add">添加</string>
+    <string name="ok">确定</string>
+    <string name="suggest_phone_tips">如果方便请留下您的手机号，客服工作人员后续将会与您进行深入沟通</string>
+    <string name="please_input_seggestion">请输入建议要求</string>
+    <string name="please_input_phone">请输入联系方式</string>
+    <string name="submit">提交</string>
+
+    <string name="fragment_disclaimer_textone">"
+		电子体温计APP为北京五洲康泰科技有限公司（以下简称本公司）开发的一款手机软件。就本软件的使用做如下声明：</string>
+    <string name="fragment_disclaimer_texttwo">1）、一切移动客户端用户在下载并浏览APP手机APP软件时均被视为已经仔细阅读本条款并完全同意。凡以任何方式登陆本APP，或直接、间接使用本APP资料者，均被视为自愿接受本网站相关声明和用户服务协议的约束。
+	</string>
+    <string name="fragment_disclaimer_textthree">2）、用户出于自愿使用本软件，您必须了解使用本软件的风险，在尚未购买产品之前，本公司不承担使用本软件的文章或信息的任何责任。
+	</string>
+    <string name="fragment_disclaimer_textfour">3）、本客户端所有信息仅供参考，不作为个别诊断、用药和使用的依据，不能替代医生和其他医务人员的建议。如发现孩子发烧严重，请立即拨打急救电话送附近医院或医疗机构。如自行使用本客户端资料发生偏差，本公司概不负责，亦不负法律责任。
+	</string>
+    <string name="fragment_disclaimer_textfive">4）、本客户端对以下情形不承担任何责任：a、因互联网的崩溃或延迟；b、保证任何使用的应用程序的可用性和实效性；c、用户数据操作失误造成的数据损失；d、软件病毒带来的损失；e、与用户系统的软件兼容性
+	</string>
+    <string name="fragment_disclaimer_textsix">本公司致力于提供完整、正确的健康资讯与数据，但因用户在使用过程中，人体测量位置的不同，绑带松紧度的不同，从而导致的数据测量不准或误差，本公司不承担任何责任。
+	</string>
+    <string name="fragment_disclaimer_textseven">本声明最终解释权归北京五洲康泰科技有限公司所有。</string>
+    <string name="instructionsone">" 为避免不必要的伤害，使用本产品前请仔细阅读以下信息：</string>
+    <string name="instructionstwo">1）、警告：不允许进行任何形式的改装；</string>
+    <string name="instructionsthree">2）、不可与核磁共振或CT设备功用；</string>
+    <string name="instructionsfour">3）、爆炸危险：严禁在易燃麻醉气体环境中使用本产品；</string>
+    <string name="instructionsfive">4）、体温计对病人诊断只起到辅助作用，请医生结合临床表现和症状做出诊断；</string>
+    <string name="instructionssix">5）、须时常检查体温计探测探头的佩戴位置和松紧程度，以免松动而导致采集到的数据不准</string>
+    <string name="fragment_aboutus_text">     北京五洲康泰科技有限公司（以下简称五洲康泰），是一家从事医疗器械研究、生产、销售、服务为一体的高新技术企业，也是全球高端医疗设备研发和技术创新的公司之一。本公司自主研发生产的医用核磁共振系列、远程健康监控系列、儿童智能体温计等产品，均已得到国内外广大用户的好评。电子体温计品牌为五洲康泰旗下的自有品牌，主要应用到智能体温计、智能生理监测等婴儿产品系列。
+	</string>
+
+    <string name="data_titile">体温分析</string>
+    <string name="temp_set">高温设置</string>
+    <string name="quilt_set">蹬被设置</string>
+    <string name="drug_setTime">设定时间</string>
+    <string name="drug_setDrug">设定药物</string>
+    <string name="drug_otherDrug">请填写药物</string>
+    <string name="title_activity_temperature">TemperatureActivity</string>
+    <string name="temp_alarm_switch">报警开关</string>
+    <string name="temp_sound">声音</string>
+    <string name="temp_shock">震动</string>
+    <string name="setTime_title">编辑闹钟</string>
+    <string name="selectB">声音</string>
+    <string name="tempBsave">保存</string>
+    <string name="data_date">日</string>
+    <string name="data_month">月</string>
+    <string name="data_year">年</string>
+    <string name="title_activity_my_calendar">MyCalendar</string>
+    <string name="title_activity_find_pass">FindPassActivity</string>
+    <string name="title_activity_suggest">SuggestActivity</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_activity_forget_pass">ForgetPass</string>
+    <string name="title_activity_data">DataActivity</string>
+
+
+
+    <string name="child_name_txt">孩子姓名</string>
+    <string name="child_info_txt">没有您孩子的信息，请尝试添加一个</string>
+    <string name="child_dele_txt"> 是否要删除孩子的所有信息？若删除将删除孩子的温度记录，监护人将无法继续监护孩子。是否继续删除？</string>
+    <string name="child_haizi">孩子</string>
+    <string name="child_list">孩子列表</string>
+    <string name="child_add">添加姓名</string>
+    <string name="child_info">孩子详情</string>
+</resources>

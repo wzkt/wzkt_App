@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_10">
+
+    <com.Alan.eva.ui.widget.StretchableList
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@color/white"
+        android:divider="@color/theme_color"
+        android:visibility="gone" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/tv_home_low_temp_warning"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawablePadding="@dimen/size_5"-->
+    <!--android:drawableTop="@mipmap/home_temperature"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="@dimen/size_5"-->
+    <!--android:text="体温警告"-->
+    <!--android:textColor="@color/theme_color" />-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/tv_home_kick_quilt_warning"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawablePadding="@dimen/size_5"-->
+    <!--android:drawableTop="@mipmap/home_temperature"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="@dimen/size_5"-->
+    <!--android:text="蹬被预警"-->
+    <!--android:textColor="@color/theme_color" />-->
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/tv_home_medicine_remind"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawablePadding="@dimen/size_5"-->
+    <!--android:drawableTop="@mipmap/home_temperature"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:padding="@dimen/size_5"-->
+    <!--android:text="吃药提醒"-->
+    <!--android:textColor="@color/theme_color" />-->
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_207_207_207"
+        android:padding="@dimen/size_10"
+        android:text="基本信息"
+        android:visibility="gone"
+        />
+
+    <com.Alan.eva.ui.widget.CircleImageView
+        android:id="@+id/circle_home_child_portrait"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_10"
+        android:padding="@dimen/size_5"
+        android:visibility="gone"
+        android:src="@mipmap/ic_flag_default_portrait" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_home_child_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_10"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="@dimen/font_16" />
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/size_10" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:shrinkColumns="1"
+        android:stretchColumns="0,2"
+        android:visibility="visible"
+        >
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_home_child_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/font_25" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身高(cm)"
+                    android:textSize="@dimen/font_13" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_vertical_gray_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_home_child_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/font_25" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重(kg)"
+                    android:textSize="@dimen/font_13" />
+            </LinearLayout>
+        </TableRow>
+
+        <include layout="@layout/layout_horizontal_gray_line" />
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_home_child_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/font_25" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄(岁)"
+                    android:textSize="@dimen/font_13" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_vertical_gray_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_home_child_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/font_25" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="@dimen/font_13" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <include layout="@layout/layout_horizontal_gray_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_207_207_207"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="监测记录" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wifibaijianbt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3"
+            android:text="摆件监控"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:background="@color/firstF"
+            />
+    </LinearLayout>
+    <include layout="@layout/layout_horizontal_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/size_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高温度" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_home_child_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="--" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_horizontal_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/size_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最低温度" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_home_child_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="--" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_horizontal_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/size_10">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发烧次数" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_home_child_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="--" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_horizontal_gray_line" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_home_child_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="您的体温在正常范围 (*^__^*)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:background="@color/firstF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_home_temperature"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tempioc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="体温提醒"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_home_quilt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/quiltioc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="蹬被提醒"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_home_drug"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/durgioc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="吃药提醒"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_home_data"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dataioc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="数据分析"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

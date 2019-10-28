@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_60"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/size_20"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/monitormsg"
+            android:gravity="center"
+            android:textSize="@dimen/font_18" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_monitor_list_item_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="222"
+        android:textSize="@dimen/font_25" />
+
+
+
+    </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_monitor_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:text=""
+            android:textSize="@dimen/font_10" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/size_20"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/roommsg"
+                android:layout_marginRight="@dimen/size_40"
+                android:textSize="@dimen/font_15" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_monitor_list_item_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_powermsg"
+            android:layout_marginRight="@dimen/size_40"
+            android:textSize="@dimen/font_15" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_monitor_list_item_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+    <include
+        layout="@layout/layout_horizontal_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
